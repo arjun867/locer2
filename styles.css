@@ -1,0 +1,283 @@
+.brand{
+    color:#33A852;
+
+}
+
+.custom-navitem{
+    color: black;
+}
+
+.image-container {
+    background-color: lightgreen;
+    width: 100%;
+    height: 80vh; /* 80% of the viewport height */
+    position: relative;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.left-image, .right-image {
+    height: auto; /* Maintain aspect ratio */
+    position: absolute;
+}
+
+/* Positioning for left images */
+.left-image:nth-of-type(1) {
+    top: 0px; /* Adjust as needed */
+    left: 0px; /* Adjust as needed */
+    width: 16%; /* Adjust as needed */
+}
+
+.left-image:nth-of-type(2) {
+    bottom: 0px; /* Adjust as needed */
+    left: 0px; /* Adjust as needed */
+    width: 20%; /* Adjust as needed */
+}
+
+/* Positioning for right images */
+.top-right {
+    top: 0px; /* Adjust as needed */
+    right: 0px; /* Adjust as needed */
+    width: 15%; /* Adjust as needed */
+}
+
+.center-right {
+    top: 33%; /* Adjust as needed */
+    right: 0px; /* Adjust as needed */
+    width: 13%; /* Adjust as needed */
+}
+
+.bottom-right {
+    bottom:-40px; /* Adjust as needed */
+    right: 0px; /* Adjust as needed */
+    width: 50%; /* Adjust as needed */
+}
+
+.center-content {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.center-text {
+    font-size: 24px; /* Adjust as needed */
+    margin-bottom: 10px; /* Adjust as needed */
+}
+
+.center-button {
+    padding: 10px 20px; /* Adjust as needed */
+}
+
+.my-card-container {
+    margin: 50px 0; /* Adds vertical margin to separate from other sections */
+}
+
+.card-custom {
+    height: auto; /* Allow height to adjust based on content */
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ddd; /* Optional: Add a border for better visual separation */
+}
+
+.card-img-top {
+    width: 100%; /* Ensure the image takes up the full width of the card */
+    height: 200px; /* Fixed height for images; adjust as needed */
+    object-fit: contain; /* Ensure the entire image is visible */
+}
+
+.card-body {
+    padding: 20px; /* Adjust padding for spacing inside the card */
+}
+
+@media (max-width: 767px) {
+    .card-img-top {
+        height: 150px; /* Adjust image height for smaller screens */
+    }
+}
+
+.custom-card {
+    width: 100%; /* Ensures the card takes the full width of its container */
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px; /* Adds a gap between cards */
+}
+
+.custom-card .img-fluid {
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers its container */
+}
+
+.custom-card .card-body {
+    padding: 20px; /* Adds padding inside the card body */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers the text vertically */
+}
+
+@media (max-width: 767px) {
+    .custom-card {
+        flex-direction: column;
+    }
+}
+
+.custom-testmcard {
+    width: 100%; /* Ensures the card takes the full width of its container */
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px; /* Adds a gap between cards */
+}
+
+.custom-testmcard .img-fluid {
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers its container */
+}
+
+.custom-testmcard .card-body {
+    padding: 20px; /* Adds padding inside the card body */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers the text vertically */
+    text-align: left; /* Aligns the text to the left */
+    height: 100%; /* Ensures the card body takes the full height of its container */
+}
+
+@media (max-width: 767px) {
+    .custom-testmcard {
+        flex-direction: column;
+    }
+}
+
+.custom-div {
+    background-color: lightgreen;
+    background-image: url('images/bannerbg.png');
+    background-size: cover;
+    background-position: center;
+    height: 50vh; /* Adjust as needed */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.no-padding {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.side-image {
+    width: 100%; /* Adjust as needed */
+    height: auto;
+    max-width: 60%; /* Ensure the image takes up to 30% of the column */
+}
+
+.custom-text {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+}
+
+@media (max-width: 767px) {
+    .custom-div {
+        flex-direction: column;
+    }
+    .side-image {
+        width: 80%; /* Adjust as needed for smaller screens */
+        margin-bottom: 10px;
+    }
+}
+
+.custom-faqbtn {
+    display: block;
+    width: 100%; /* Make the button take the full width of the container */
+    margin: 0 auto; /* Center the button */
+    text-align: center; /* Center the text within the button */
+}
+.faq-content {
+    margin-top: 2px; /* Space between button and content */
+    text-align: center; /* Center the text in the card */
+}
+.faqtext{
+    margin-top: 5px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+/* Footer styling */
+/* Footer styling */
+.footer {
+    margin-top: 7px;
+    height: 40vh;
+    background-color: #2D873E;
+    position: relative;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.background-text {
+    color: darkgreen;
+    font-size: 40vh;
+    font-weight: bold;
+    opacity: 0.1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    z-index: 1;
+}
+
+.footer-content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-left {
+    flex: 0 0 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-right {
+    flex: 0 0 50%;
+    text-align: center;
+}
+
+.footer-text {
+    color: white;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.img-fluid {
+    margin-left: 45vh;
+    width: 30vh;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.footer-bottom-text {
+    position: relative;
+    z-index: 2;
+    margin-top: 10px;
+}
+
+.footer-bottom-text p {
+    color: white;
+    margin: 0;
+}
